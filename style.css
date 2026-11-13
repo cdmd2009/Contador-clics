@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7f6;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #2c3e50;
+}
+
+/* Tarjeta principal */
+.tarjeta {
+  width: 100%;
+  max-width: 520px;
+  margin: 24px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.subtitulo {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Número del contador */
+#contador {
+  font-size: 56px;
+  font-weight: 800;
+  color: #3498db;
+  margin-bottom: 16px;
+  transition: color 0.3s;
+}
+
+/* Reto 2: cuando los likes superan 10 */
+#contador.alto {
+  color: #e74c3c;
+}
+
+.tarjeta.alto {
+  background-color: #fff5f5;
+}
+
+/* Botón principal */
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2ecc71;
+  padding: 12px 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(46, 204, 113, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Tabla de registros */
+table {
+  width: 100%;
+  margin-top: 28px;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+th {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7f8c8d;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+td {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Botones del Reto 1 */
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+button.secundario {
+  font-size: 14px;
+  padding: 8px 18px;
+  background-color: #f39c12;
+  box-shadow: 0 3px 8px rgba(243, 156, 18, 0.4);
+}
+
+button.peligro {
+  font-size: 14px;
+  padding: 8px 18px;
+  background-color: #e74c3c;
+  box-shadow: 0 3px 8px rgba(231, 76, 60, 0.4);
+}
